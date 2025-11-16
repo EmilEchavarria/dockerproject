@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo DevOps</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        svg {
+            width: 130px;
+            height: 130px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            color: #222;
+        }
+
+        p {
+            color: #555;
+        }
+
+        button {
+            margin-top: 20px;
+            background: #0066ff;
+            padding: 12px 25px;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #0049b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <!-- SVG incrustado directamente -->
+        <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 2C10.9 2 10 2.9 10 4V6.28C7.11 7.17 5 9.83 5 13C5 16.87 8.13 20 12 20C15.87 20 19 16.87 19 13C19 9.83 16.89 7.17 14 6.28V4C14 2.9 13.1 2 12 2Z" stroke="#222" stroke-width="2"/>
+            <path d="M9 14C9 15.66 10.34 17 12 17C13.66 17 15 15.66 15 14C15 12.34 13.66 11 12 11C10.34 11 9 12.34 9 14Z" stroke="#222" stroke-width="2"/>
+            <path d="M7 20C7.5 18.5 9 17 12 17C15 17 16.5 18.5 17 20" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+
+        <h1>Hola Mundo 🚀</h1>
+        <p>práctica final de DevOps.</p>
+
+        <button onclick="mostrarMensaje()">Haz clic aquí</button>
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            alert("Hola Emil! CI/CD funcionando correctamente 😎");
+        }
+
+        // Función para pruebas unitarias
+        function sumar(a, b) {
+            return a + b;
+        }
+
+        if (typeof module !== "undefined") {
+            module.exports = { sumar };
+        }
+    </script>
+
+</body>
+</html>
